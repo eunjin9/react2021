@@ -18,7 +18,7 @@ function YouVideo(){
     fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=web&key=AIzaSyCJeIEoO1YJvs6StAvwFoVl9c8gt5622wM", requestOptions)
       .then(response => response.json())
       .then(result => setVideos(result.items))
-      .catch(error => console.log('error', error));
+      .catch(error => console.log('error', error));   hhhh
   }, []);
 
   return (
